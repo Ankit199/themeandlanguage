@@ -1,0 +1,35 @@
+.gray-theme {
+    ion-content {
+        // background-color: rgb(235, 72, 72);
+        p {
+            color: rgb(0, 0, 0);
+        }
+    }
+    ion-header {
+        ion-navbar,
+        ion-toolbar {
+            .toolbar-background {
+                background-color: rgb(70, 70, 70);
+            }
+            .toolbar-title {
+                color: #fff;
+            }
+        }
+        .bar-buttons, .bar-button {
+            color: #fff;
+        }
+    }
+    ion-fab {
+        .fab {
+            background: rgb(70, 70, 70);
+        }
+        ion-fab-list button[ion-fab] {
+            background: rgb(70, 70, 70);
+            color: #fff;
+            div.label {
+                background: rgb(70, 70, 70);
+                ;
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.green-theme {
+    ion-content {
+        // background-color: rgb(235, 72, 72);
+        p {
+            color: rgb(0, 0, 0);
+        }
+    }
+    ion-header {
+        ion-navbar,
+        ion-toolbar {
+            .toolbar-background {
+                background-color: rgb(5, 80, 21);
+            }
+            .toolbar-title {
+                color: #fff;
+            }
+        }
+        .bar-buttons, .bar-button {
+            color: #fff;
+        }
+    }
+    ion-fab {
+        .fab {
+            background: rgb(5, 80, 21);
+        }
+        ion-fab-list button[ion-fab] {
+            background: rgb(5, 80, 21);
+            color: #fff;
+            div.label {
+                background: rgb(5, 80, 21);
+                ;
+            }
+        }
+    }
+    .menu-inner {
+        .item.item-block {
+            background-color: rgb(5, 80, 21);
+            color: #fff;
+            &:hover {
+                background-color: rgb(6, 114, 30);
+            }
+        }
+        .content {
+            background-color: rgb(5, 80, 21);
+        }
+    }
+}

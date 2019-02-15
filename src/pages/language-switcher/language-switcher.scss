@@ -1,0 +1,56 @@
+page-language-switcher {
+    ion-fab-list button{
+        -webkit-box-shadow: 0px 0px 31px 0px rgb(41, 41, 41);
+        -moz-box-shadow: 0px 0px 31px 0px rgb(41, 41, 41);
+        box-shadow: 0px 0px 31px 0px rgb(41, 41, 41);
+    }
+    .fab {
+        contain: layout;
+        background: #1ad6b3
+    }
+
+    ion-fab {
+        button {
+            box-shadow: 0 4px 10px rgb(41, 41, 41);;
+        }
+    
+        ion-fab-list button[ion-fab] {
+            text-align: center;
+            overflow: visible;
+            background: #1ad6b3;
+            &.red-theme {
+                background: #d30202;
+            }
+            &.blue-theme {
+                background: #0280e7;   
+            }
+            &.gray-theme {
+                background: #919191;   
+            }
+            &.green-theme {
+                background: #14b35b;   
+            }
+            &.default-theme{
+                background: #cecece;   
+            }
+            div.label {
+              position: absolute;
+              right: 48px;
+              background: #1ad6b3;
+              height: 24px;
+              line-height: 16px;
+              padding-left: 8px;
+              padding-right: 8px;
+              padding-top: 5px;
+              padding-bottom: 5px;
+              margin-top: 0px;
+              border-radius: 5px;
+              box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.14), 0 4px 5px rgba(0, 0, 0, 0.1);
+            }
+        }
+    
+        .button-inner {
+            overflow: visible;
+        } 
+    }
+}

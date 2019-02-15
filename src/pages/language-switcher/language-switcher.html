@@ -1,0 +1,28 @@
+<!--
+  Generated template for the LanguageSwitcherPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+  <!-- this fab is placed at bottom right -->
+  
+  <ion-fab right bottom>
+    <button ion-fab><ion-icon name="globe"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab *ngFor="let item of languages" (click)="setLanguage(item.code)" >{{item.name.substr(0,2) | uppercase }}
+        <div class="label">{{item.name| uppercase }}</div>
+      </button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-fab left bottom>
+    <button ion-fab><ion-icon name="add"></ion-icon></button>
+    <ion-fab-list side="top">
+      <button ion-fab (click)="changeTheme('default-theme')" class="default-theme"></button>
+      <button ion-fab (click)="changeTheme('red-theme')" class="red-theme"></button>
+      <button ion-fab (click)="changeTheme('blue-theme')" class="blue-theme"></button>
+      <button ion-fab (click)="changeTheme('gray-theme')" class="gray-theme"></button>
+      <button ion-fab (click)="changeTheme('green-theme')" class="green-theme"></button>
+    </ion-fab-list>
+  </ion-fab>
